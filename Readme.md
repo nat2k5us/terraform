@@ -1,4 +1,8 @@
-TerraForm is a IAC  Infrastructure as Code Tool
+# Resources
+[https://github.com/hashicorp/terraform](https://github.com/hashicorp/terraform)
+[https://github.com/alexlouden/Terraform.tmLanguage/blob/54d8350c3c5929c921ea7561c932aa15e7d96c48/syntax_test_terraform.tf](Lang Syntax)
+
+## TerraForm is a IAC  Infrastructure as Code Tool
 
 * It allows for deployment of Infrastructure with Code
 
@@ -29,4 +33,6 @@ tf apply
 ```
 
 * This will create a local file resource - i.e. a simple text file named "pets.txt and containing the content 'We  Love Pets!'
-# terraform
+
+### HCL 
+* Terraform uses tf extension  files and the language is HCL - short for Hasicorp Language
