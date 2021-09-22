@@ -63,5 +63,5 @@ resource "random_pet" "rand-pet" {
     length = var.length
 }
 ```
-
+### In the below we can see the order of precedence 
 ![./images/verprecedence.png](./images/verprecedence.png)
