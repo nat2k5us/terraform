@@ -36,3 +36,32 @@ tf apply
 
 ### HCL 
 * Terraform uses tf extension  files and the language is HCL - short for Hasicorp Language
+
+### Variables
+
+* Variables are declared as below and then referenced from the other files
+
+Type | Example 
+---------|----------
+ string| "pets.txt" 
+ number | 1
+ bool | true
+ any | Default Value
+
+* Variables can be of type string, number, bool or any
+
+```
+variable "prefix" {
+    default = "Mrs"
+}
+```
+
+```
+resource "random_pet" "rand-pet" {
+    prefix = var.prefix
+    separator = var.separator
+    length = var.length
+}
+```
+
+![./images/verprecedence.png](./images/verprecedence.png)
